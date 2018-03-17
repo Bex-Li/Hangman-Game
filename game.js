@@ -6,24 +6,30 @@ var wordToGuess = [
     "browser",
     "pseudo",
     "laptop",
-    "variable",
+    "variable"
 ];
 //define variables needed
 var guessesLeft = 8
 var winCounter = 0
 var loseCounter = 0
-var wordToGuess = wordToGuess.length
 // var lettersInWord = 0
     // numDashes 
 var dashAndGoodGuesses = []
 var wrongGuesses = []
+var winsHTML = document.getElementById("wins")
+winsHTML.innerHTML = winCounter
 
-//key press begins game 
-// Function getWord array
-function getWord () {
-    return Math.random ()
-    //wordToGuess[]
+//key press begins game & create function to getWord 
+function getWord() {
+    return wordToGuess[Math.floor(Math.random() * wordToGuess.length)];
 }
+
+document.addEventListener('keypress', function(event){
+    console.log(winsHTML);
+    var keyName = event.key;
+    winsHTML.innerHTML = winCounter;
+    console.log('key: ' + keyName);
+});
 
 
 // // guessesLeft = 9;
