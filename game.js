@@ -1,23 +1,31 @@
 console.log("anything we want"); 
-// var wordArray = [
-//     "syntax",
-//     "jquery",
-//     "browser",
-//     "pseudo",
-//     "laptop",
-//     "variable",
-// ];
+//define wordToGuess variables
+var wordToGuess = [
+    "syntax",
+    "jquery",
+    "browser",
+    "pseudo",
+    "laptop",
+    "variable",
+];
+//define variables needed
+var guessesLeft = 8
+var winCounter = 0
+var loseCounter = 0
+var wordToGuess = wordToGuess.length
+// var lettersInWord = 0
+    // numDashes 
+var dashAndGoodGuesses = []
+var wrongGuesses = []
 
-//     // var guessesLeft += 8
-//     var winCounter 
-//     var loseCounter
-//     var wordToGuess 
-//     var lettersInWord
-//         numDashes
-//     var dashAndGoodGuesses
-//     var wrongGuesses
+//key press begins game 
+// Function getWord array
+function getWord () {
+    return Math.random ()
+    //wordToGuess[]
+}
 
-// // Function getWord array
+
 // // guessesLeft = 9;
 // //then random choose
 // //then lettersInWord = wordToGuess.split
